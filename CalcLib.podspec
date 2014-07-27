@@ -84,7 +84,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "include/*.h", "libCalculator.a"
+  s.source_files  = "include/*.h"
   #s.exclude_files = "Classes/Exclude"
 
   s.public_header_files = "include/*.h"
@@ -102,7 +102,7 @@ Pod::Spec.new do |s|
   # s.resources = "Resources/*.png"
 
   s.preserve_paths = "libCalculator.a"
-  #s.ios.vendored_library = "libCalculator.a"
+  s.ios.vendored_library = "libCalculator.a"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
