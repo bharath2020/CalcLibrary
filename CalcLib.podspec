@@ -49,8 +49,6 @@ Pod::Spec.new do |s|
   #
   
   s.author             = { "Bharath Booshan" => "bharath2020@gmail.com" }
-  # Or just: s.author    = "Bharath Booshan"
-  # s.authors            = { "Bharath Booshan" => "bharath2020@gmail.com" }
   s.social_media_url   = "http://twitter.com/bharath2020"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -60,11 +58,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
+  s.platform     = :ios, "6.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -85,8 +79,6 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "include/*.h"
-  #s.exclude_files = "Classes/Exclude"
-
   s.public_header_files = "include/*.h"
 
 
@@ -98,9 +90,6 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
-
   s.preserve_paths = "libCalculator.a"
   s.ios.vendored_library = "libCalculator.a"
 
@@ -111,10 +100,6 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
-
-  # s.library   = "iconv"
   s.libraries = "stdc++", "Calculator"
 
 
